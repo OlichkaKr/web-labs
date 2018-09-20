@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matches</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+</head>
+<body class="background">
+	<header>
+		<nav>
+			<div id="head-background">
+				<div id="head-menu">
+					<ul>
+						<li><a href="./index.html">Main</a></li>
+						<li class="dropdown">
+							<a class="active" href="javascript:void(0)" class="dropbtn">Matches</a>
+							<div class="dropdown-content">
+								<a href="#">MGP</a>
+								<a href="#">Poker Series</a>
+								<a href="#">International PC</a>
+							</div>
+						</li>
+						<li><a href="#">Fans</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Contacts</a></li>
+						<li><a href="#">Admin</a></li>
+						<li></li>
+					</ul>
+					<img style="float: right; padding: 1%; width: 2%;" src="assets/img/logo.png" alt="">
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="loading hidden">
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</div>
+
+	<section>
+		<h1 class="table-title">Poker Tournaments Calendar</h1>
+	</section>
+
+	<content id="content-table">
+		<table class="table-matches">
+			<title>Poker Tournaments</title>
+			<tr>
+				<th>Tournament</th>
+				<th>Start</th>
+				<th>End</th>
+				<th>Place</th>
+			</tr>
+			<tr>
+				<td>WPT Korea</td>
+				<td>2018-09-18</td>
+				<td>2018-09-24</td>
+				<td>Paradise City Incheon, Incheon, KOR</td>
+			</tr>
+			<tr>
+				<td>WSOP Circuit - Coconut Creek</td>
+				<td>2018-09-13</td>
+				<td>2018-09-23</td>
+				<td>Seminole Casino, Coconut Creek, USA</td>
+			</tr>
+			<tr>
+				<td>Merit Gangsters Poker Cup</td>
+				<td>2018-09-10</td>
+				<td>2018-09-23</td>
+				<td>Merit Crystal Cove Hotel-Casino, Kyrenia, CYP</td>
+			</tr>
+			<tr>
+				<td>2018 Platinum Casino Recurring Tournaments</td>
+				<td>2018-09-01</td>
+				<td>2018-09-30</td>
+				<td>Platinum Casino, Sunny Beach, BUL</td>
+			</tr>
+			<tr>
+				<td>Tiger Poker Cup 2018 Season 3</td>
+				<td>2018-09-20</td>
+				<td>2018-09-26</td>
+				<td>Runner Runner Poker Club, Beijing, CHN</td>
+			</tr>
+			<tr>
+				<td>The London Deepstack</td>
+				<td>2018-09-20</td>
+				<td>2018-09-23</td>
+				<td>The Poker Room formerly The Vic, London, ENG</td>
+			</tr>
+			<tr>
+				<td>WSOP Circuit - Coconut Creek</td>
+				<td>2018-09-13</td>
+				<td>2018-09-23</td>
+				<td>Seminole Casino, Coconut Creek, USA</td>
+			</tr>
+			<tr>
+				<td>The Commerce Poker Series</td>
+				<td>2018-08-31</td>
+				<td>2018-09-16</td>
+				<td>Commerce Casino, Los Angeles, USA</td>
+			</tr>
+			<tr>
+				<td>France Poker Open (FPO)</td>
+				<td>2018-09-18</td>
+				<td>2018-09-23</td>
+				<td>Pasino de Saint Amand les Eaux, Saint-Amand-les-Eaux, FRA</td>
+			</tr>
+			<tr>
+				<td>WPT Korea</td>
+				<td>2018-09-18</td>
+				<td>2018-09-24</td>
+				<td>Paradise City Incheon, Incheon, KOR</td>
+			</tr>
+			<tr>
+				<td>WPT Maryland at Live! Casino</td>
+				<td>2018-09-21</td>
+				<td>2018-09-25</td>
+				<td>Maryland Live! Casino, Hanover, USA</td>
+			</tr>
+			<tr>
+				<td>WPT Borgata Poker Open</td>
+				<td>2018-09-16</td>
+				<td>2018-09-21</td>
+				<td>Borgata Hotel Casino & Spa, Atlantic City, USA</td>
+			</tr>
+		</table>
+	</content>
+	<footer>
+		<p>Created by: Olga Kryvoruchka</p>
+		<p>Contact information: <a href="mailto:olichka121kr76@gmail.com">olichka121kr76@gmail.com</a>.</p>
+	</footer>
+</body>
+<script type="text/javascript">
+	window.addEventListener("load", function(){
+		const loading = document.querySelector(".loading");
+		loading.className += " hidden";
+	});
+</script>
+</html>
