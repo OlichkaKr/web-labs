@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html manifest="manifest.cache">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All About Poker</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+
+<body class="background" onload="onLoad()">
+	<div id="header-content" class="col-md-11">
+		<div id="head-background">
+			<div id="head-menu">
+				<div class="topnav" id="topnav">
+					<a href="index.html">Main</a>
+					<div class="drop-down">
+						<a class="dropbtn" href="matches.html">Matches</a>
+						<div class="dropdown-content">
+							<a href="#">MGP</a>
+							<a href="#">Poker Series</a>
+							<a href="#">International PC</a>
+						</div>
+					</div>
+					<a href="feedbacks.html">Feedbacks</a>
+					<a class="active" href="#">News</a>
+					<a href="contacts.html">Contacts</a>
+					<a href="admin.html">Admin</a>
+					<a href="javascript:void(0);" class="icon" onclick="hambMenu()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<div style="float: right;" id="logo">
+						<img style="float: right; padding: 2%; width: 16%;" src="assets/img/logo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="loading hidden">
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</div>
+
+	<div style="padding-top: 70px;">
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/wsop.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>History of WSOP Europe Part I: The London Years</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/african.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Five of the Best South African Poker Players</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/galactic_series.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>PokerStars Galactic Series a Success, Awards Nearly €17 Million</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/china_final_table.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>All-China Final Table Set at Poker King Cup Macau Main Event</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/david_lappin.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Unibet's David Lappin Wins the Cash Game Festival Bratislava Trophy</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/pca.png" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>PokerStars Releases PCA Schedule and PSPC Details</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/wptd.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>François Tosques Wins the 2018 WPTDeepStacks Marrakech</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/team_pro.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Team Pro Adrien Delmas Second of 17 After Winamax Poker Open Day</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/partypoker.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>partypoker LIVE MILLIONS UK: Hewitt Bags Big, Grossmann Lead 1b</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/wendy.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Wendy Freedman Wins HPT Black Hawk ($167,696)</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/mike_takayama.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Mike Takayama Becomes First Filipino to Win Asia Player of the Year</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="news-content">
+					<div class="cell-content">
+						<img src="assets/img/global_poker.jpg" alt="">
+						<a href="#"><span id="clickable-area"></span>
+							<h3>Don't Miss out on Global Poker's SC$5,000 Freeroll Sunday</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<footer>
+		<div class="copyrights col-md-12">
+			<p>Created by: Olga Kryvoruchka</p>
+			<p>Contact information: <a class="footer-a" " href="mailto:olichka121kr76@gmail.com">olichka121kr76@gmail.com</a>.</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/l_storage.js"></script>
+</html>

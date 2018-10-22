@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html manifest="manifest.cache">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All About Poker</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="background">
+	<div id="header-content" class="col-md-11">
+		<div id="head-background">
+			<div id="head-menu">
+				<div class="topnav" id="topnav">
+					<a href="index.html">Main</a>
+					<div class="drop-down">
+						<a class="dropbtn" href="matches.html">Matches</a>
+						<div class="dropdown-content">
+							<a href="#">MGP</a>
+							<a href="#">Poker Series</a>
+							<a href="#">International PC</a>
+						</div>
+					</div>
+					<a href="feedbacks.html">Feedbacks</a>
+					<a href="news.html">News</a>
+					<a href="contacts.html">Contacts</a>
+					<a class="active" href="#">Admin</a>
+					<a href="javascript:void(0);" class="icon" onclick="hambMenu()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<div style="float: right;" id="logo">
+						<img style="float: right; padding: 2%; width: 16%;" src="assets/img/logo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="loading hidden">
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</div>
+
+	<section class="title-feedbacks">
+		<h2>Add news</h2>
+	</section>
+	<div class="col-md-3"></div>
+	<div class="container col-md-6">
+		<form>
+			<img id='clock'></img>
+			<label style="width: 100%; margin-bottom: 1%;"><input name="image" style="height: 0; width: 100%; background-color: #3A2703; border: none;" disabled="disabled"></label>
+			<div class="file-upload">
+			    <label>
+			        <input type="file" id="getval" name="file">
+			        <a><span onclick="foo()">Add image</span></a>
+			    </label>
+			</div>
+
+			<!-- <label>
+				<input type='file' id='getval' name="background-image"><span>Add image</span>
+				
+			</label> -->
+			<!-- <input type="Submit" name="Submit" value="Add image" class="submit-feedback" style="margin-bottom: 5%;"> -->
+			<label style="width: 100%;">
+			<input type="text" name="nname" alt="Submit" placeholder="News title" class="input-name">
+			</label>
+			<label style="width: 100%; margin-top: 1%;">
+				<textarea type="text" name="feedback" alt="Submit" placeholder="News text"></textarea>
+			</label>
+			<input type="button" onclick="validateNew(this.form)" name="Submit" 
+				value="Add news" class="submit-feedback" style="margin-bottom: 5%;">
+		</form>
+	</div>
+	<div class="col-md-3"></div>
+
+	<footer>
+		<div class="copyrights col-md-12">
+			<p>Created by: Olga Kryvoruchka</p>
+			<p>Contact information: <a class="footer-a" " href="mailto:olichka121kr76@gmail.com">olichka121kr76@gmail.com</a>.</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</html>

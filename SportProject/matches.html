@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.cache">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +7,39 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="background">
-	<header>
-		<nav>
-			<div id="head-background">
-				<div id="head-menu">
-					<ul>
-						<li><a href="./index.html">Main</a></li>
-						<li class="dropdown">
-							<a class="active" href="javascript:void(0)" class="dropbtn">Matches</a>
-							<div class="dropdown-content">
-								<a href="#">MGP</a>
-								<a href="#">Poker Series</a>
-								<a href="#">International PC</a>
-							</div>
-						</li>
-						<li><a href="#">Fans</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Contacts</a></li>
-						<li><a href="#">Admin</a></li>
-						<li></li>
-					</ul>
-					<img style="float: right; padding: 1%; width: 2%;" src="assets/img/logo.png" alt="">
+	<div id="header-content" class="col-md-11">
+		<div id="head-background">
+			<div id="head-menu">
+				<div class="topnav" id="topnav">
+					<a href="index.html">Main</a>
+					<div class="drop-down active">
+						<a class="dropbtn" href="#">Matches</a>
+						<div class="dropdown-content">
+							<a href="#">MGP</a>
+							<a href="#">Poker Series</a>
+							<a href="#">International PC</a>
+						</div>
+					</div>
+					<a href="feedbacks.html">Feedbacks</a>
+					<a href="news.html">News</a>
+					<a href="contacts.html">Contacts</a>
+					<a href="admin.html">Admin</a>
+					<a href="javascript:void(0);" class="icon" onclick="hambMenu()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<div style="float: right;" id="logo">
+						<img style="float: right; padding: 2%; width: 16%;" src="assets/img/logo.png" alt="">
+					</div>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</div>
+	</div>
 
 	<div class="loading hidden">
 		<div class="loader-container">
@@ -46,85 +52,85 @@
 	</section>
 
 	<content id="content-table">
-		<table class="table-matches">
+		<table class="table-style">
 			<title>Poker Tournaments</title>
 			<tr>
-				<th>Tournament</th>
-				<th>Start</th>
-				<th>End</th>
-				<th>Place</th>
+				<th class="th-style">Tournament</th>
+				<th class="th-style">Start</th>
+				<th class="th-style">End</th>
+				<th class="th-style">Place</th>
 			</tr>
 			<tr>
-				<td>WPT Korea</td>
-				<td>2018-09-18</td>
-				<td>2018-09-24</td>
-				<td>Paradise City Incheon, Incheon, KOR</td>
+				<td class="td-style">WPT Korea</td>
+				<td class="td-style">2018-09-18</td>
+				<td class="td-style">2018-09-24</td>
+				<td class="td-style">Paradise City Incheon, Incheon, KOR</td>
 			</tr>
 			<tr>
-				<td>WSOP Circuit - Coconut Creek</td>
-				<td>2018-09-13</td>
-				<td>2018-09-23</td>
-				<td>Seminole Casino, Coconut Creek, USA</td>
+				<td class="td-style">WSOP Circuit - Coconut Creek</td>
+				<td class="td-style">2018-09-13</td>
+				<td class="td-style">2018-09-23</td>
+				<td class="td-style">Seminole Casino, Coconut Creek, USA</td>
 			</tr>
 			<tr>
-				<td>Merit Gangsters Poker Cup</td>
-				<td>2018-09-10</td>
-				<td>2018-09-23</td>
-				<td>Merit Crystal Cove Hotel-Casino, Kyrenia, CYP</td>
+				<td class="td-style">Merit Gangsters Poker Cup</td>
+				<td class="td-style">2018-09-10</td>
+				<td class="td-style">2018-09-23</td>
+				<td class="td-style">Merit Crystal Cove Hotel-Casino, Kyrenia, CYP</td>
 			</tr>
 			<tr>
-				<td>2018 Platinum Casino Recurring Tournaments</td>
-				<td>2018-09-01</td>
-				<td>2018-09-30</td>
-				<td>Platinum Casino, Sunny Beach, BUL</td>
+				<td class="td-style">2018 Platinum Casino Recurring Tournaments</td>
+				<td class="td-style">2018-09-01</td>
+				<td class="td-style">2018-09-30</td>
+				<td class="td-style">Platinum Casino, Sunny Beach, BUL</td>
 			</tr>
 			<tr>
-				<td>Tiger Poker Cup 2018 Season 3</td>
-				<td>2018-09-20</td>
-				<td>2018-09-26</td>
-				<td>Runner Runner Poker Club, Beijing, CHN</td>
+				<td class="td-style">Tiger Poker Cup 2018 Season 3</td>
+				<td class="td-style">2018-09-20</td>
+				<td class="td-style">2018-09-26</td>
+				<td class="td-style">Runner Runner Poker Club, Beijing, CHN</td>
 			</tr>
 			<tr>
-				<td>The London Deepstack</td>
-				<td>2018-09-20</td>
-				<td>2018-09-23</td>
-				<td>The Poker Room formerly The Vic, London, ENG</td>
+				<td class="td-style">The London Deepstack</td>
+				<td class="td-style">2018-09-20</td>
+				<td class="td-style">2018-09-23</td>
+				<td class="td-style">The Poker Room formerly The Vic, London, ENG</td>
 			</tr>
 			<tr>
-				<td>WSOP Circuit - Coconut Creek</td>
-				<td>2018-09-13</td>
-				<td>2018-09-23</td>
-				<td>Seminole Casino, Coconut Creek, USA</td>
+				<td class="td-style">WSOP Circuit - Coconut Creek</td>
+				<td class="td-style">2018-09-13</td>
+				<td class="td-style">2018-09-23</td>
+				<td class="td-style">Seminole Casino, Coconut Creek, USA</td>
 			</tr>
 			<tr>
-				<td>The Commerce Poker Series</td>
-				<td>2018-08-31</td>
-				<td>2018-09-16</td>
-				<td>Commerce Casino, Los Angeles, USA</td>
+				<td class="td-style">The Commerce Poker Series</td>
+				<td class="td-style">2018-08-31</td>
+				<td class="td-style">2018-09-16</td>
+				<td class="td-style">Commerce Casino, Los Angeles, USA</td>
 			</tr>
 			<tr>
-				<td>France Poker Open (FPO)</td>
-				<td>2018-09-18</td>
-				<td>2018-09-23</td>
-				<td>Pasino de Saint Amand les Eaux, Saint-Amand-les-Eaux, FRA</td>
+				<td class="td-style">France Poker Open (FPO)</td>
+				<td class="td-style">2018-09-18</td>
+				<td class="td-style">2018-09-23</td>
+				<td class="td-style">Pasino de Saint Amand les Eaux, Saint-Amand-les-Eaux, FRA</td>
 			</tr>
 			<tr>
-				<td>WPT Korea</td>
-				<td>2018-09-18</td>
-				<td>2018-09-24</td>
-				<td>Paradise City Incheon, Incheon, KOR</td>
+				<td class="td-style">WPT Korea</td>
+				<td class="td-style">2018-09-18</td>
+				<td class="td-style">2018-09-24</td>
+				<td class="td-style">Paradise City Incheon, Incheon, KOR</td>
 			</tr>
 			<tr>
-				<td>WPT Maryland at Live! Casino</td>
-				<td>2018-09-21</td>
-				<td>2018-09-25</td>
-				<td>Maryland Live! Casino, Hanover, USA</td>
+				<td class="td-style">WPT Maryland at Live! Casino</td>
+				<td class="td-style">2018-09-21</td>
+				<td class="td-style">2018-09-25</td>
+				<td class="td-style">Maryland Live! Casino, Hanover, USA</td>
 			</tr>
 			<tr>
-				<td>WPT Borgata Poker Open</td>
-				<td>2018-09-16</td>
-				<td>2018-09-21</td>
-				<td>Borgata Hotel Casino & Spa, Atlantic City, USA</td>
+				<td class="td-style">WPT Borgata Poker Open</td>
+				<td class="td-style">2018-09-16</td>
+				<td class="td-style">2018-09-21</td>
+				<td class="td-style">Borgata Hotel Casino & Spa, Atlantic City, USA</td>
 			</tr>
 		</table>
 	</content>
@@ -133,10 +139,5 @@
 		<p>Contact information: <a href="mailto:olichka121kr76@gmail.com">olichka121kr76@gmail.com</a>.</p>
 	</footer>
 </body>
-<script type="text/javascript">
-	window.addEventListener("load", function(){
-		const loading = document.querySelector(".loading");
-		loading.className += " hidden";
-	});
-</script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html manifest="manifest.cache">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All About Poker</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="background" onload="onLoad()">
+	<!-- <nav> -->
+	<!-- <div id="header" class="row"> -->
+		<div id="header-content" class="col-md-11">
+			<div id="head-background">
+				<div id="head-menu">
+					<div class="topnav" id="topnav">
+						<a href="index.html">Main</a>
+						<div class="drop-down">
+							<a class="dropbtn" href="matches.html">Matches</a>
+							<div class="dropdown-content">
+								<a href="#">MGP</a>
+								<a href="#">Poker Series</a>
+								<a href="#">International PC</a>
+							</div>
+						</div>
+						<a class="active" href="#">Feedbacks</a>
+						<a href="news.html">News</a>
+						<a href="contacts.html">Contacts</a>
+						<a href="admin.html">Admin</a>
+						<a href="javascript:void(0);" class="icon" onclick="hambMenu()">
+							<i class="fa fa-bars"></i>
+						</a>
+						<div style="float: right;" id="logo">
+							<img style="float: right; padding: 2%; width: 16%;" src="assets/img/logo.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- </div>` -->
+
+
+	<div class="loading hidden">
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</div>
+
+	<section  class="title-feedbacks" >
+		<h2>Add new feedback</h2>
+	</section>
+
+	<div class="container">
+		<form>
+			<label style="width: 100%;">
+				<input type="text" name="fanname" alt="Submit" placeholder="Type your name here" class="input-name">
+			</label>
+			<label style="width: 100%; margin-top: 1%;">
+				<textarea name="feedback" alt="Submit" placeholder="Type your feedback here"></textarea>
+			</label>
+			<input type="button" name="Submit" value="Send a feedback" onclick="validate(this.form)" class="submit-feedback">
+		</form>
+	</div>
+
+	<section name="getval" id="strategy-section" class="title-feedbacks" style="margin-bottom: 1%;">
+		<h2>Feedbacks from our fans</h2>
+	</section>
+
+	<div id="feedbacks" class="container">
+		<div class="feedbacks-light col-md-12">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet lobortis lectus. Donec tristique auctor lacus, sed faucibus enim finibus sed. Pellentesque vel dui sed dui rhoncus faucibus ut in erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent libero dolor, ultricies non ullamcorper eget, scelerisque et mi. Sed semper in sapien sit amet iaculis. Morbi consectetur venenatis fringilla. Sed eu sapien eget quam dapibus mollis et ut sem.</p>
+			<p>Mauris pretium sollicitudin nulla vel auctor. Nullam enim sem, dapibus sit amet nibh ut, pellentesque dictum eros. In vitae tincidunt neque, quis posuere urna. Curabitur maximus lorem mauris, et elementum felis venenatis vel. Maecenas porta lacus at mi malesuada consequat. Sed nibh mauris, gravida et venenatis sed, fermentum vitae est. Aliquam ac erat et nunc malesuada molestie. In hac habitasse platea dictumst. Vivamus eget fringilla lorem. Proin eleifend sollicitudin pulvinar. Ut ultricies ullamcorper tellus nec blandit. Fusce at orci varius ipsum viverra mattis in id eros. Cras vel auctor nisl. Cras id orci erat. Pellentesque lobortis nisl non molestie bibendum.</p>
+			<div class="info">
+				<div class="author-light">30.09.2018</div>
+				<div class="author-light">Antony</div>
+			</div>
+		</div>
+		<div class="col-md-12 feedbacks-dark">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu magna elit. Sed lobortis, est sit amet congue lobortis, velit nisl lacinia massa, in feugiat nibh elit nec augue. Maecenas odio nibh, vehicula eget interdum in, finibus vitae lectus. Ut augue nibh, sodales quis leo eget, iaculis vulputate augue. Praesent cursus lacus nulla, eget fringilla erat lacinia eu. Cras sed lectus lacinia, consectetur eros quis, tempus urna. Aenean eu vulputate risus. Vestibulum felis erat, faucibus ac pharetra ut, tempus a neque. Aenean hendrerit pellentesque nisl, quis egestas mi convallis nec. Morbi quis dui pharetra, ultricies ligula non, mattis mauris. In laoreet tempus dapibus. Donec at lacinia quam. Nunc mattis varius nisi, a gravida nunc ultrices eget. Nam imperdiet ullamcorper odio, aliquet ullamcorper orci suscipit eget. Curabitur interdum quam eros, id laoreet mauris sollicitudin eu.</p>
+			<p>Morbi eleifend dolor imperdiet arcu suscipit, vitae gravida velit interdum. Nulla facilisi. Proin scelerisque semper nibh, ut euismod tortor ornare sit amet. Nunc eu eros massa. Maecenas purus enim, pulvinar vehicula tellus sed, porttitor imperdiet lectus. Curabitur et justo vitae nulla euismod iaculis at molestie lorem. Nam dignissim, tellus nec auctor tincidunt, lectus ex sollicitudin mi, at aliquet dolor est sit amet velit. Proin at faucibus nisi, sit amet hendrerit erat. Sed pretium cursus ullamcorper.</p>
+			<p>Phasellus at risus auctor, tincidunt erat vel, dignissim odio. Nam consectetur nulla libero, at suscipit nunc malesuada ut. Praesent ut varius ligula, vel tempor lacus. Ut varius massa et justo mattis, a luctus leo aliquet. Aenean blandit vulputate tortor porttitor vestibulum. Sed vulputate nibh ut tincidunt tincidunt. Nam lobortis iaculis nulla. Fusce semper erat sit amet arcu vulputate vestibulum. Nam semper pharetra sapien at facilisis. Nullam accumsan diam ut volutpat commodo. Vestibulum elementum porta nisi, vitae ultricies sapien dapibus posuere. Proin orci nunc, porta at purus et, tincidunt finibus mauris. Maecenas placerat eros tellus. Cras mollis purus a dolor sagittis commodo. Ut condimentum nibh quis ipsum pretium posuere.</p>
+			<div class="info">
+				<div class="author-dark">12.09.2018</div>
+				<div class="author-dark">Jessica</div>
+			</div>
+		</div>
+		<div class="col-md-12 feedbacks-light">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui eros, vestibulum et auctor ac, lacinia quis nisl. Curabitur eu odio luctus, dictum erat eu, scelerisque neque. Maecenas gravida risus sit amet arcu convallis faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse volutpat sem sit amet porttitor posuere. Proin id dapibus ex. Nulla tortor purus, aliquam vitae diam ut, accumsan bibendum nunc. Praesent et accumsan tellus. Vestibulum vulputate interdum diam, id laoreet sapien sodales ut. Aliquam lobortis, velit id faucibus blandit, lorem quam dictum risus, a ultricies tellus mauris id sem. Cras bibendum dui id lorem consectetur commodo sit amet sit amet augue. In eget nunc quis metus pellentesque maximus.</p>
+			<div class="info">
+				<div class="author-light">05.08.2018</div>
+				<div class="author-light">Mike</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<footer>
+		<div class="copyrights">
+			<p>Created by: Olga Kryvoruchka</p>
+			<p>Contact information: <a class="footer-a" " href="mailto:olichka121kr76@gmail.com">olichka121kr76@gmail.com</a>.</p>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</html>

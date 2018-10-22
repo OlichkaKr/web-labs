@@ -1,0 +1,28 @@
+CACHE MANIFEST
+
+CACHE:
+assets/css/style.css
+assets/img/logo.png
+index.html
+contacts.html
+matches.html
+feedbacks.html
+news.html
+assets/css/bootstrap.min.css
+assets/css/fontawesome.min.css
+assets/img/david_peters.jpg
+assets/img/players_on_the_move.jpg
+assets/img/pro-poker-player.jpg
+assets/img/adams.jpg
+assets/img/maria-ho.jpg
+assets/img/mixed_tips.jpg
+
+
+NETWORK:
+news.html
+feedbacks.html
+
+FALLBACK:
+admin.html /error.html
+contacts.html /error.html
+feedbacks.html /error.html

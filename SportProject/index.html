@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.cache">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>All About Poker</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/background.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/background.css"> -->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 </head>
 
 <body class="background">
-	<div id="header" class="row">
+	<!-- <nav> -->
+	<!-- <div id="header" class="row"> -->
 		<div id="header-content" class="col-md-11">
 			<div id="head-background">
 				<div id="head-menu">
 					<div class="topnav" id="topnav">
 						<a class="active" href="#">Main</a>
 						<div class="drop-down">
-							<a href="matches.html"><button class="dropbtn">Matches<i class="fa fa-caret-down"></i></button></a>
+							<a class="dropbtn" href="matches.html">Matches</a>
 							<div class="dropdown-content">
 								<a href="#">MGP</a>
 								<a href="#">Poker Series</a>
 								<a href="#">International PC</a>
 							</div>
 						</div>
-						<a href="#">Fans</a>
-						<a href="#">News</a>
-						<a href="#">Contacts</a>
-						<a href="#">Admin</a>
+						<a href="feedbacks.html">Feedbacks</a>
+						<a href="news.html">News</a>
+						<a href="contacts.html">Contacts</a>
+						<a href="admin.html">Admin</a>
 						<a href="javascript:void(0);" class="icon" onclick="hambMenu()">
 							<i class="fa fa-bars"></i>
 						</a>
 						<div style="float: right;" id="logo">
-							<img style="float: right; padding: 1%; width: 12%;" src="assets/img/logo.png" alt="">
+							<img style="float: right; padding: 2%; width: 16%;" src="assets/img/logo.png" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>`
+	<!-- </div>` -->
+
+
+	<div class="loading hidden">
+		<div class="loader-container">
+			<div class="loader"></div>
+		</div>
+	</div>
 
 	<section>
 		<h2>Latest news</h2>
@@ -157,15 +166,6 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript">
-	function hambMenu() {
-		var x = document.getElementById("topnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-</script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 
 </html>
