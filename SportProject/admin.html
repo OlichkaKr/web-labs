@@ -71,12 +71,12 @@
 			</label> -->
 			<!-- <input type="Submit" name="Submit" value="Add image" class="submit-feedback" style="margin-bottom: 5%;"> -->
 			<label style="width: 100%;">
-			<input type="text" name="nname" alt="Submit" placeholder="News title" class="input-name">
+			<input id="title" type="text" name="nname" alt="Submit" placeholder="News title" class="input-name">
 			</label>
 			<label style="width: 100%; margin-top: 1%;">
-				<textarea type="text" name="news" alt="Submit" placeholder="News text"></textarea>
+				<textarea id="texts" type="text" name="news" alt="Submit" placeholder="News text"></textarea>
 			</label>
-			<input type="button" onclick="validateNew(this.form)" name="Submit" 
+			<input type="button" onclick="addNews()" name="Submit" 
 				value="Add news" class="submit-feedback" style="margin-bottom: 5%;">
 		</form>
 	</div>
@@ -89,7 +89,8 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
 <script type="text/javascript" src="assets/js/localStorage.js"></script>
+<script type="text/javascript" src="assets/js/script1.js"></script>
 <script type="text/javascript" src="assets/js/indexedDB.js"></script>
 </html>

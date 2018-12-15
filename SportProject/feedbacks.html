@@ -60,12 +60,12 @@
 	<div class="container">
 		<form>
 			<label style="width: 100%;">
-				<input type="text" name="fanname" alt="Submit" placeholder="Type your name here" class="input-name">
+				<input id="fantitle" type="text" name="fanname" alt="Submit" placeholder="Type your name here" class="input-name">
 			</label>
 			<label style="width: 100%; margin-top: 1%;">
-				<textarea name="feedback" alt="Submit" placeholder="Type your feedback here"></textarea>
+				<textarea name="message" id="message" alt="Submit" placeholder="Type your feedback here"></textarea>
 			</label>
-			<input type="button" name="Submit" value="Send a feedback" onclick="validate(this.form)" class="submit-feedback">
+			<input type="button" name="Submit" value="Send a feedback" onclick="addFan()" class="submit-feedback">
 		</form>
 	</div>
 
@@ -74,7 +74,7 @@
 	</section>
 
 	<div id="feedbacks" class="container">
-		<div class="feedbacks-light col-md-12">
+		<div id="article" class="feedbacks-light col-md-12">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet lobortis lectus. Donec tristique auctor lacus, sed faucibus enim finibus sed. Pellentesque vel dui sed dui rhoncus faucibus ut in erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent libero dolor, ultricies non ullamcorper eget, scelerisque et mi. Sed semper in sapien sit amet iaculis. Morbi consectetur venenatis fringilla. Sed eu sapien eget quam dapibus mollis et ut sem.</p>
 			<p>Mauris pretium sollicitudin nulla vel auctor. Nullam enim sem, dapibus sit amet nibh ut, pellentesque dictum eros. In vitae tincidunt neque, quis posuere urna. Curabitur maximus lorem mauris, et elementum felis venenatis vel. Maecenas porta lacus at mi malesuada consequat. Sed nibh mauris, gravida et venenatis sed, fermentum vitae est. Aliquam ac erat et nunc malesuada molestie. In hac habitasse platea dictumst. Vivamus eget fringilla lorem. Proin eleifend sollicitudin pulvinar. Ut ultricies ullamcorper tellus nec blandit. Fusce at orci varius ipsum viverra mattis in id eros. Cras vel auctor nisl. Cras id orci erat. Pellentesque lobortis nisl non molestie bibendum.</p>
 			<div class="info">
@@ -108,7 +108,8 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+<script type="text/javascript" src="assets/js/script1.js"></script>
 <script type="text/javascript" src="assets/js/localStorage.js"></script>
 <script type="text/javascript" src="assets/js/indexedDB.js"></script>
 </html>
